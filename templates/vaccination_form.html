@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    *{
+            margin: 0;
+            padding: 0;
+        }
+    .container {
+        display: grid;
+        width: 100%;
+        height: 650px;
+        grid-template-columns: 200px 1fr 1fr;
+        grid-template-rows: 80px 1fr 1fr 100px;
+        grid-gap: 1rem;
+        grid-template-areas:
+            "header header header"
+            "sidebar content-1 content-1"
+            "sidebar content-2 content-3"
+            "footer footer footer";
+      }
+      .header {
+        grid-area: header;
+        background-image: linear-gradient(rgb(207, 63, 207),purple);
+        border:3px solid ;
+      }
+      
+      .sidebar {
+        grid-area: sidebar;
+        background-image: linear-gradient(rgb(63, 197, 207),rgb(3, 67, 71));
+        border:3px solid ;
+      }
+.content-1 {
+        grid-area: content-1;
+        background-image: linear-gradient(rgb(104, 212, 122),rgb(5, 80, 15));
+        border:3px solid ;
+        margin: 0;
+        padding: 0;                   
+
+      }
+      
+      .content-2 {
+        grid-area: content-2;
+        background-image: linear-gradient(rgb(207, 63, 207),purple);
+        border:3px solid ;
+        
+      }
+      
+      .content-3 {
+        grid-area: content-3;
+        background-image: linear-gradient(rgb(207, 63, 207),purple);
+        border:3px solid ;
+        
+      }
+      
+      .footer {
+        grid-area: footer;
+        background-image: linear-gradient(rgb(207, 63, 207),purple);
+        border:3px solid ;
+        
+      }
+      
+      .content1 img{
+          margin: 0;
+          padding: 0;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="sidebar">sidebar</div>
+        <div class="content-1">        <form action="">
+          <h1>Vaccination Form</h1>   
+          First Name
+          <input type="text" name="fname">
+          Last Name
+          <input type="text" name="lname">         
+          Contact Number
+          <input type="tel" name="phone">
+          Address
+          <input type="text" name="address">
+          Pincode
+          <input type="text" name="pincode">
+          <input type="submit" value="Submit">
+      </form>
+    </div>
+        <div class="content-2">
+          <p>
+            The world is in the midst of a COVID-19 pandemic. As WHO and partners work together on the response -- tracking the pandemic, advising on critical interventions, distributing vital medical supplies to those in need--- they are racing to develop and deploy safe and effective vaccines. 
+            
+            Vaccines save millions of lives each year. Vaccines work by training and preparing the body’s natural defences – the immune system – to recognize and fight off the viruses and bacteria they target. After vaccination, if the body is later exposed to those disease-causing germs, the body is immediately ready to destroy them, preventing illness.
+            
+            There are several safe and effective vaccines that prevent people from getting seriously ill or dying from COVID-19. This is one part of managing COVID-19, in addition to the main preventive measures of staying at least 1 metre away from others, covering a cough or sneeze in your elbow, frequently cleaning your hands, wearing a mask and avoiding poorly ventilated rooms or opening a window.
+            
+            As of  8 April 2021, WHO has evaluated that the following vaccines against COVID-19 have met the necessary criteria for safety and efficacy: 
+          </p>
+        </div>
+        <div class="content-3">Content-3</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>

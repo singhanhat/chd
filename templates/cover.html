@@ -1,0 +1,16 @@
+{%extends "base.html"%}
+{%block content%}
+    <h1>
+        Total Capacity= {{session ["capacity"]}}, Number of People Present= {{session["counter"]}} 
+    </h1>
+    {%if show_add%}
+    <button class="btn-gradient"><a href="/distancing_add">Add More Visitors</a></button>
+    {%endif%}
+   
+    {%if show_sub%}
+    <button class="btn-gradient"><a href="/distancing_sub">Remove More Visitors</a></button>
+    
+    {%endif%}
+    <button class="btn-gradient"> <a href="/reset">Reset</a></button>
+   
+{%endblock%}
