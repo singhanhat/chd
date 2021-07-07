@@ -109,6 +109,7 @@ rgba(133, 239, 49, 0) 62.27% ), red;
   
   }
   
+
   to {
   
   background-position: 5000px 0;
@@ -116,3 +117,32 @@ rgba(133, 239, 49, 0) 62.27% ), red;
   }
   
   }
+.form{
+width: 30%;
+background-color: rgba(0,0,0,0.5);
+border-radius: 10px;
+padding: 10px;
+}
+.form form input{
+  background: none;
+  border: none;
+  border-bottom: 3px solid green;
+  margin-bottom: 5%;
+}
+::placeholder{
+color: rgb(208, 216, 208);
+
+}
+::-webkit-input-placeholder { /* Edge */
+  color: honeydew;
+}
+.form form{
+margin: none;
+
+}
+.submit
+{
+color: honeydew;
+padding: 10px;
+background-color: rgb(15, 91, 141);
+}

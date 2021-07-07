@@ -1,3 +1,4 @@
+from typing import Counter
 from flask import Flask, render_template, url_for,request, flash, redirect,session
 
 app = Flask(__name__)
@@ -93,10 +94,14 @@ def distancin():
         print("earlier counter",counter)
         counter-=visitors
 
-        if counter<=capacity:
+        if counter<=capacity and counter>0:
             session["counter"]=counter
             print(counter,6)
             return redirect("/home")
+            
+
+        elif counter<0:
+            return render_template("error.html",message="Minimum capacity exceeded ")        
 
         else:
             return render_template("error.html",message="This operation could not be processed ")        
